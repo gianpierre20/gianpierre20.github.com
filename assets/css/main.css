@@ -1,0 +1,172 @@
+/*color pallet*/
+/*
+#0797B2 dark
+#2EDEFF
+#14DAFF base
+#B25200
+#FF8014 light
+*/
+html{
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.content{
+    background-color: white;
+    /*max-width: 960px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;*/
+    height: 85vh;
+    width: 85vw;
+    box-shadow: 0 3px 6px #1a6d5a, 0 3px 6px #1a6d5a;
+    position: relative;
+    padding: 0.5em;
+    border-radius: 20px;
+    overflow: scroll;
+    
+
+}
+.table{
+    width: 100%;
+    border-spacing: 0;
+   
+}
+.table th, 
+.table td {
+    padding: 1em;
+    text-align: left;
+
+}
+.table tr:nth-child(even){
+
+    background-color: #274370;
+}
+td:nth-of-type(1){
+    font-size: 1.5em;
+    color : orangered;
+}
+th{
+    display: none;
+}
+td{
+    display: block;
+    
+}
+
+.fa-star{
+    color: yellow;
+}
+
+.center{
+    text-align: center;
+}
+.underline{
+    border-bottom: solid 5px yellow;
+    padding-bottom: 15px;
+}
+.position{
+    background-color: yellow;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+/*.actions{
+    position: absolute;
+    top: 1em;
+    right:1em;
+}*/
+.actions{
+    position: sticky;
+    top: 1em;
+    left: 1em;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.close{
+    height: 40px;
+    width: 40px;
+    background-color: #4286f4;
+    display: inline-block;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+a{
+    
+    text-decoration: none;
+}
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+.item-title{
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+/* pseudoclases
+:hover | : visited | : active | : focus
+
+*/
+/* unidades de medidas en css*/
+/*unidades fijas , estaticas o absolutas
+/*pixeles px ,centimetros cm,milimetros mm, picas pc ,puntos pt
+
+/*unidades de medidas relativas
+/* porcentajes %, em , ex X, rem ,vh (1%), vw(1%)*/
+
+.itmen.image{
+    display: none;
+}
+iframe{
+    width: 75vw;
+}
+/* media querys*/
+   @media(min-width:600px){
+       th{
+           display: table-cell;
+       }
+       td{
+           display: table-cell;
+       }
+       td:nth-of-type(1){
+        font-size: 1.5em;
+        color : black;
+       }
+       .content{
+           width: 70vw;
+           height: 70vh;
+           padding: 1.8em;
+       }
+       .itmen.image{
+           display: inline-block;
+       }
+       iframe{
+           height: 220px;
+           width:320px;
+       }
+       .inline{
+          display: inline-block;
+       }
+       .actions{
+          position: absolute;
+          top: 1em;
+          right:1em;
+       }
+       .item-title{
+        font-size: 1.5em;
+        text-transform: uppercase;
+       }
+   }
